@@ -1,7 +1,7 @@
 # 🏥 predictionReadmissions
 
 <p align="center">
-  <img src="assets/etl-flow.png" alt="ETL Flow Diagram" width="700"/>
+  <img src="assets/projectimage.png" alt="Hospital Readmission Prediction" width="400"/>
 </p>
 
 ![Hospital Readmission Prediction](assets/projectimage.png)
