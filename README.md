@@ -1,5 +1,22 @@
 # 🏥 predictionReadmissions
 
+# 🏥 predictionReadmissions
+
+> ⚠️ This project requires access to a local MySQL database. Connection credentials are managed via a `.env` file, which is not included in this repository for security reasons.
+>
+> To run the project locally:
+>
+> 1. Create a `.env` file in the project root.
+> 2. Define the following environment variables:
+>
+>    * `MYSQL_HOST=localhost`
+>    * `MYSQL_PORT=3306`
+>    * `MYSQL_USER=your_username`
+>    * `MYSQL_PASSWORD=your_password`
+>    * `MYSQL_DATABASE=your_database_name`
+> 3. Ensure your MySQL server is running and accessible.
+
+
 A machine learning pipeline to predict 30-day hospital readmissions using electronic health record (EHR) data.
 
 ## 📂 Project Structure
