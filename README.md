@@ -1,6 +1,12 @@
 # 🏥 predictionReadmissions
 
+<p align="center">
+  <img src="assets/etl-flow.png" alt="ETL Flow Diagram" width="700"/>
+</p>
+
 ![Hospital Readmission Prediction](assets/projectimage.png)
+
+
 
 Disclosure: Used LLMs to improve readability wherever required. 
 
