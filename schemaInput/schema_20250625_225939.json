@@ -1,0 +1,210 @@
+{
+    "metadata": {
+        "fileName": "data/full_diab.csv",
+        "createdAt": "2025-06-25T22:59:39.513914",
+        "numColumns": 50,
+        "numRows": 28529
+    },
+    "schema": {
+        "encounter_id": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "patient_nbr": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "race": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "gender": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "age": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "weight": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "admission_type_id": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "discharge_disposition_id": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "admission_source_id": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "time_in_hospital": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "payer_code": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "medical_specialty": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "num_lab_procedures": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "num_procedures": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "num_medications": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "number_outpatient": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "number_emergency": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "number_inpatient": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "diag_1": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "diag_2": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "diag_3": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "number_diagnoses": {
+            "dtype": "int64",
+            "nullable": false
+        },
+        "max_glu_serum": {
+            "dtype": "object",
+            "nullable": true
+        },
+        "A1Cresult": {
+            "dtype": "object",
+            "nullable": true
+        },
+        "metformin": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "repaglinide": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "nateglinide": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "chlorpropamide": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "glimepiride": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "acetohexamide": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "glipizide": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "glyburide": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "tolbutamide": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "pioglitazone": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "rosiglitazone": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "acarbose": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "miglitol": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "troglitazone": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "tolazamide": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "examide": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "citoglipton": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "insulin": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "glyburide-metformin": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "glipizide-metformin": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "glimepiride-pioglitazone": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "metformin-rosiglitazone": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "metformin-pioglitazone": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "change": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "diabetesMed": {
+            "dtype": "object",
+            "nullable": false
+        },
+        "readmitted": {
+            "dtype": "object",
+            "nullable": false
+        }
+    }
+}
