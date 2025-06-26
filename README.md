@@ -1,9 +1,10 @@
-🏥 predictionReadmissions
+# 🏥 predictionReadmissions
 
 A machine learning pipeline to predict 30-day hospital readmissions using electronic health record (EHR) data.
 
-📂 Project Structure
+## 📂 Project Structure
 
+```
 predictionReadmissions/
 ├── data/
 │   ├── raw/              # Source datasets (CSV, SQL dumps, etc.)
@@ -17,102 +18,103 @@ predictionReadmissions/
 ├── models/               # Saved models (e.g., .pkl, joblib)
 ├── requirements.txt      # Python dependencies
 └── README.md             # This documentation
+```
 
-⚙️ Installation
+## ⚙️ Installation
 
 Install Python dependencies with:
 
+```bash
 pip install -r requirements.txt
+```
 
 Typical dependencies include:
 
+```
 pandas
 numpy
 scikit-learn
 sqlalchemy
 joblib
 # + optionally TensorFlow/PyTorch if leveraging deep learning
+```
 
-🚀 Usage
+## 🚀 Usage
 
 To run the full end-to-end pipeline:
 
+```bash
 python src/extraction.py
 python src/transformation.py
 python src/training.py \
     --model random_forest \
     --output models/random_forest.pkl
+```
 
 Each script supports CLI arguments for selecting input locations, model types, and output directories.
 
-📊 Model & Evaluation
+## 📊 Model & Evaluation
 
-Base models: Logistic Regression, Random Forest, Gradient Boosted Trees.
+* Base models: Logistic Regression, Random Forest, Gradient Boosted Trees.
+* (Optional) Deep learning versions using RNNs/CNNs on structured/unstructured EHR data.
+* Evaluation metrics include: ROC‎‑AUC, Accuracy, Precision, Recall, F1‎‑Score, Calibration.
+* Visual outputs: ROC and calibration plots saved to `models/` or visualized in `notebooks/`.
 
-(Optional) Deep learning versions using RNNs/CNNs on structured/unstructured EHR data.
+## 🧠 Data
 
-Evaluation metrics include: ROC‎‑AUC, Accuracy, Precision, Recall, F1‎‑Score, Calibration.
+This project uses the [Diabetes 130-US hospitals for years 1999-2008 dataset](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008) from the UCI Machine Learning Repository.
 
-Visual outputs: ROC and calibration plots saved to models/ or visualized in notebooks/.
+### Dataset Overview:
 
-🧠 Data
+* Contains over 100,000 hospital admissions for diabetic patients.
+* Includes demographics, diagnoses, medications, lab results, procedures, and hospital readmission outcomes.
+* Readmission is categorized as: `NO`, `<30` (within 30 days), or `>30`.
+* Primary prediction target: whether a patient is readmitted within 30 days of discharge.
 
-This project uses the Diabetes 130-US hospitals for years 1999-2008 dataset from the UCI Machine Learning Repository.
+### Preprocessing Notes:
 
-Dataset Overview:
+* Missing values are imputed.
+* Categorical variables are encoded.
+* Temporal features and aggregations are constructed.
 
-Contains over 100,000 hospital admissions for diabetic patients.
+## 🤩 Extensibility
 
-Includes demographics, diagnoses, medications, lab results, procedures, and hospital readmission outcomes.
+* Swap models easily using training script flags.
+* Add new feature engineering logic in `transformation.py`.
+* Incorporate advanced architectures: RNNs, Transformers, multimodal approaches.
 
-Readmission is categorized as: NO, <30 (within 30 days), or >30.
+## 🎯 Outputs
 
-Primary prediction target: whether a patient is readmitted within 30 days of discharge.
+* Trained model files (e.g., `.pkl`, `.joblib`) in `models/`.
+* Evaluation metrics and plot artifacts.
+* Optionally, prediction outputs for new datasets.
 
-Preprocessing Notes:
+## ✅ Getting Started
 
-Missing values are imputed.
+1. Clone the repo:
 
-Categorical variables are encoded.
+   ```bash
+   git clone https://github.com/toofanCodes/predictionReadmissions.git
+   cd predictionReadmissions
+   ```
+2. Install dependencies:
 
-Temporal features and aggregations are constructed.
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Start the pipeline:
 
-🤩 Extensibility
+   ```bash
+   python src/extraction.py
+   python src/transformation.py
+   python src/training.py
+   ```
 
-Swap models easily using training script flags.
+## 📄 License
 
-Add new feature engineering logic in transformation.py.
+Released under the **MIT License**. See `LICENSE` for details.
 
-Incorporate advanced architectures: RNNs, Transformers, multimodal approaches.
+---
 
-🎯 Outputs
-
-Trained model files (e.g., .pkl, .joblib) in models/.
-
-Evaluation metrics and plot artifacts.
-
-Optionally, prediction outputs for new datasets.
-
-✅ Getting Started
-
-Clone the repo:
-
-git clone https://github.com/toofanCodes/predictionReadmissions.git
-cd predictionReadmissions
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Start the pipeline:
-
-python src/extraction.py
-python src/transformation.py
-python src/training.py  
-
-📄 License
-
-Released under the MIT License. See LICENSE for details.
-
-Need help or want to contribute?Feel free to open an issue or submit a pull request on GitHub.
-
+**Need help or want to contribute?**
+Feel free to open an issue or submit a pull request on GitHub.
