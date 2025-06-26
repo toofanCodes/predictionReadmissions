@@ -1,6 +1,6 @@
 # 🏥 predictionReadmissions
 
-Disclosure: Used ChatGpt to improve readability wherever required. 
+Disclosure: Used LLMs to improve readability wherever required. 
 
 > ⚠️ This project requires access to a local MySQL database. Connection credentials are managed via a `.env` file, which is not included in this repository for security reasons.
 >
