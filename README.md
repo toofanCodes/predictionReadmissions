@@ -1,13 +1,8 @@
 # 🏥 predictionReadmissions
 
 <p align="center">
-  <img src="assets/projectimage.png" alt="Hospital Readmission Prediction" width="400"/>
+  <img src="assets/projectimage.png" alt="Hospital Readmission Prediction" width="300"/>
 </p>
-
-![Hospital Readmission Prediction](assets/projectimage.png)
-
-
-
 Disclosure: Used LLMs to improve readability wherever required. 
 
 > ⚠️ This project requires access to a local MySQL database. Connection credentials are managed via a `.env` file, which is not included in this repository for security reasons.
