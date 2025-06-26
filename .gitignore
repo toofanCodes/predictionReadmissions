@@ -1,2 +1,4 @@
 .env
 WorkFiles
+__pycache__
+.DS_Store
